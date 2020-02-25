@@ -68,6 +68,9 @@ spring.flyway.baseline-on-migrate=true
 
 ### Set baseline-version for Flyway to execute migrations at version 1 or more
 spring.flyway.baseline-version=0
+
+### The SQL dialect makes Hibernate generate better SQL for the chosen database
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQL94Dialect
 ``` 
 
 * Create Flyway migration files in `src/main/resources/db/migration`
